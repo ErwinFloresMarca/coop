@@ -26,18 +26,21 @@ class CreatePersonasTable extends Migration
       });
 
       Schema::create('gerentes',function(Blueprint $table){
-          $table->increments('id')->unsigned();
-          $table->foreign('id')->references('id')->on('personas');
+          $table->increments('id');
+          $table->integer('persona_id')->unsigned();
+          $table->foreign('persona_id')->references('id')->on('personas');
           $table->timestamps();
       });
       Schema::create('asesores',function(Blueprint $table){
-          $table->increments('id')->unsigned();
-          $table->foreign('id')->references('id')->on('personas');
+        $table->increments('id');
+        $table->integer('persona_id')->unsigned();
+          $table->foreign('persona_id')->references('id')->on('personas');
           $table->timestamps();
       });
       Schema::create('cajeras',function(Blueprint $table){
-          $table->increments('id')->unsigned();
-          $table->foreign('id')->references('id')->on('personas');
+        $table->increments('id');
+        $table->integer('persona_id')->unsigned();
+          $table->foreign('persona_id')->references('id')->on('personas');
           $table->timestamps();
       });
     }

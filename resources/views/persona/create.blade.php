@@ -4,7 +4,7 @@
   <title>Nueva persona</title>
 </head>
 <body>
-  {{From::open(array('route'=>'persona.store','method'=>'post')) }}
-  {{Html }}
+  {{Form::open(array('route'=>'persona.store','method'=>'post')) }}
+  {{Form::close() }}
 </body>
 </html>

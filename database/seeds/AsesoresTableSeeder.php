@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class PerstamosTableSeeder extends Seeder
+class AsesoresTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.

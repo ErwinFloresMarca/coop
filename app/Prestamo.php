@@ -10,6 +10,9 @@ class Prestamo extends Model
     protected $table='perstamos';
 
     public function socio(){
-
+      return $this->belongsTo(Socio::class);
+    }
+    public function asesor(){
+      return $this->belongsTo(Asesor::class);
     }
 }
